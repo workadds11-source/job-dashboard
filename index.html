@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff"><meta name="description" content="لوحة فرص عمل تتحدث تلقائياً">
+  <title>فرص عمل — لوحة الوظائف</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><div><div class="eyebrow">JOB DASHBOARD</div><h1>فرص عمل</h1><p>لوحة وظائف تتحدث تلقائياً من مصادر الوظائف العامة.</p></div><button id="refreshBtn" class="refresh">تحديث الآن</button></header>
+  <main>
+    <section class="hero"><div><span class="live-dot"></span><span id="status">جارٍ تحميل الوظائف…</span><div id="updated" class="muted"></div></div><div class="source">المصدر: <a href="https://www.arbeitnow.com/" target="_blank" rel="noopener">Arbeitnow</a></div></section>
+    <section class="stats"><div class="stat"><span>كل الوظائف</span><strong id="total">—</strong></div><div class="stat"><span>عن بُعد</span><strong id="remote">—</strong></div><div class="stat"><span>آخر تحديث</span><strong id="clock">—</strong></div></section>
+    <section class="controls"><input id="search" type="search" placeholder="ابحث عن وظيفة، شركة أو مدينة…" autocomplete="off"><select id="remoteFilter"><option value="all">كل الوظائف</option><option value="remote">عن بُعد فقط</option><option value="onsite">حضوري فقط</option></select><select id="sort"><option value="new">الأحدث أولاً</option><option value="company">حسب الشركة</option></select></section>
+    <section id="jobs" class="jobs"></section>
+    <div id="empty" class="empty" hidden>لا توجد نتائج مطابقة للبحث.</div>
+  </main>
+  <footer>يتم تحديث البيانات تلقائياً عند فتح الصفحة، مع محاولة إعادة التحديث كل 10 دقائق.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
