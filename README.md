@@ -1,14 +1,2 @@
-# فرص عمل — Auto Updating Jobs Dashboard
-
-لوحة عربية متجاوبة للبحث في الوظائف العامة. الموقع يجلب البيانات مباشرة من Arbeitnow ويعيد التحديث تلقائياً كل 10 دقائق أثناء فتح الصفحة.
-
-## النشر
-الموقع مصمم للعمل على GitHub Pages من الفرع `main`.
-
-## المصدر
-بيانات الوظائف من Arbeitnow Job Board API: https://www.arbeitnow.com/api/job-board-api?page=1
-
-## ملاحظات
-- النتائج قد تكون عالمية وليست مقتصرة على السعودية.
-- زر "عرض الوظيفة والتقديم" يفتح رابط الوظيفة الأصلي.
-- يوجد تخزين محلي لآخر بيانات ناجحة عند انقطاع الاتصال.
+# Job Dashboard
+Mobile-first Arabic RTL job-search tracking dashboard for GitHub Pages. The page is intentionally conservative: it displays only confirmed tracking figures and clearly labels opportunities as reviewed until an application is actually confirmed. The dashboard refreshes its displayed time automatically every 10 minutes and can be updated through future commits.
